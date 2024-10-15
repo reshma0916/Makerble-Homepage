@@ -1,0 +1,65 @@
+/* Dark Theme with Background Color #293e33 */
+body {
+    background-color: #0a0f0c; /* Dark greenish background */
+    color: #86f6e0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #719c3a, #07D2FB);
+}
+
+h1.heading {
+    background: linear-gradient(135deg, #21244d, #21FCC7); /* Gradient color for heading */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700; /* Poppins Bold for heading */
+}
+
+h2.subheading {
+    color: #c2c9c9; /* Light blue for subheading */
+    font-weight: 600; /* Poppins Strong for subheading */
+}
+
+.bg-purple-dark {
+    background: linear-gradient(135deg, #1b3010, #0799fb); /* Gradient background for sections */
+    border-radius: 10px;
+}
+
+.btn-outline-light {
+    border-color: #c99c9c;
+    color: #b5e4f4;
+}
+
+.btn-outline-light:hover {
+    background-color: #060e67;
+    color: #08b50b;
+}
+
+.footer {
+    background-color: #594e4e;
+}
+
+.list-group-item {
+    background-color: #0819B5; /* Gradient list background */
+}
+
+.list-group-item a {
+    color: #07D2FB;
+}
+
+.list-group-item a:hover {
+    color: #21FCC7; /* Light turquoise on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    h1.heading {
+        font-size: 24px;
+    }
+    h2.subheading {
+        font-size: 20px;
+    }
+}
+

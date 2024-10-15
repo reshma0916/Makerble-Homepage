@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page - Makerble</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="my-4 text-center">
+            <h1 class="heading">Welcome to My Home Page</h1>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-pen"></i> Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-chart-bar"></i> Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-cogs"></i> Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-8">
+                <section id="story-section" class="bg-purple-dark p-4 rounded shadow-sm">
+                    <h2 class="subheading"><i class="fas fa-pencil-alt"></i> Create a New Story</h2>
+                    <form id="story-form">
+                        <div class="form-group">
+                            <label for="storyInput">Story Title</label>
+                            <input type="text" class="form-control" id="storyInput" placeholder="Enter your story title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="storyText">Story Content</label>
+                            <textarea class="form-control" id="storyText" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-light">Submit Story</button>
+                    </form>
+                    <div id="formMessage" class="mt-2"></div>
+                </section>
+
+                <section id="comments-section" class="bg-purple-dark p-4 rounded shadow-sm mt-4">
+                    <h2 class="subheading"><i class="fas fa-comments"></i> Comments</h2>
+                    <form id="comment-form">
+                        <div class="form-group">
+                            <label for="commentInput">Your Comment</label>
+                            <textarea class="form-control" id="commentInput" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-light">Post Comment</button>
+                    </form>
+                    <div id="commentList" class="mt-3"></div>
+                </section>
+
+                <section id="past-experiences" class="bg-purple-dark p-4 rounded shadow-sm mt-4">
+                    <h2 class="subheading"><i class="fas fa-history"></i> Past Experiences</h2>
+                    <button class="btn btn-dark" id="loadExperiences">Load Experiences</button>
+                    <div id="experienceList" class="mt-3"></div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-4">
+                <section id="info-section" class="bg-dark p-4 rounded shadow-sm">
+                    <h2 class="subheading"><i class="fas fa-link"></i> Quick Links</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-dark">
+                            <i class="fas fa-calendar-alt"></i> <a href="#" class="text-light">Upcoming Events</a>
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <i class="fas fa-users"></i> <a href="#" class="text-light">Team Collaborations</a>
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <i class="fas fa-book"></i> <a href="#" class="text-light">Resource Center</a>
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <i class="fas fa-comment"></i> <a href="#" class="text-light">Feedback</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+        <footer class="footer text-center my-4">
+            <p class="text-light">&copy; 2024 Makerble. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
